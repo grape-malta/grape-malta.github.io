@@ -3,13 +3,13 @@ import { Calendar, MapPin, Clock } from "lucide-react";
 
 const courses = [
   {
-    title: "Ultrasound-Guided Upper Limb Blocks",
+    title: "Ultrasound-Guided Plan A Regional Anaesthesia Workshop",
     type: "Workshop",
-    date: "12 April 2026",
-    time: "09:00 – 17:00",
+    date: "16 March 2026",
+    time: "09:00 – 14:00",
     location: "Mater Dei Hospital, Malta",
     description:
-      "Hands-on workshop covering brachial plexus blocks with live scanning and cadaveric practice.",
+      "Hands-on workshop covering various peripheral nerve blocks with live scanning.",
     spots: "Limited to 20 participants",
   },
   {
