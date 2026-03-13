@@ -26,7 +26,7 @@ const Footer = () => {
               className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors text-sm" href="mailto:grape-malta@outlook.com">
               
               <Mail className="w-4 h-4" />
-              info@grapemalta.org
+              grape-malta@outlook.com
             </a>
             <p className="text-primary-foreground/50 text-xs mt-8">
               © {new Date().getFullYear()} GRAPE-Malta. All rights reserved.
