@@ -22,9 +22,9 @@ const Footer = () => {
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4">Get in Touch</h3>
             <a
-              href="mailto:info@grapemalta.org"
-              className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors text-sm"
-            >
+
+              className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors text-sm" href="mailto:grape-malta@outlook.com">
+              
               <Mail className="w-4 h-4" />
               info@grapemalta.org
             </a>
@@ -34,8 +34,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
