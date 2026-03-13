@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/grape-logo.png";
+import logo from "@/assets/grape-logo.jpg";
 
 const navItems = [
   { label: "About", href: "#about" },
