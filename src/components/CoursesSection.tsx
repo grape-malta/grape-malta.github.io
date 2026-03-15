@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Calendar, MapPin, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import RegistrationDialog from "@/components/RegistrationDialog";
 
 const courses = [
   {
@@ -41,6 +44,8 @@ const typeColors: Record<string, string> = {
 };
 
 const CoursesSection = () => {
+  const [registerCourse, setRegisterCourse] = useState<string | null>(null);
+
   return (
     <section id="courses" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -83,7 +88,7 @@ const CoursesSection = () => {
                 {course.description}
               </p>
 
-              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-5">
                 <span className="flex items-center gap-1.5">
                   <Calendar className="w-4 h-4 text-accent" />
                   {course.date}
@@ -97,10 +102,23 @@ const CoursesSection = () => {
                   {course.location}
                 </span>
               </div>
+
+              <Button
+                onClick={() => setRegisterCourse(course.title)}
+                className="bg-accent text-accent-foreground hover:bg-accent/90"
+              >
+                Register Now
+              </Button>
             </motion.article>
           ))}
         </div>
       </div>
+
+      <RegistrationDialog
+        open={!!registerCourse}
+        onOpenChange={(open) => !open && setRegisterCourse(null)}
+        courseTitle={registerCourse ?? ""}
+      />
     </section>
   );
 };
