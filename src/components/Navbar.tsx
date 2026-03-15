@@ -7,6 +7,7 @@ const navItems = [
   { label: "About", href: "#about" },
   { label: "Courses", href: "#courses" },
   { label: "Contact", href: "#contact" },
+  { label: "Login", href: "/login" },
 ];
 
 const Navbar = () => {
