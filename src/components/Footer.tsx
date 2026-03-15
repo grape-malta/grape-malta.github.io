@@ -28,9 +28,10 @@ const Footer = () => {
               <Mail className="w-4 h-4" />
               grape-malta@outlook.com
             </a>
-            <p className="text-primary-foreground/50 text-xs mt-8">
-              © {new Date().getFullYear()} GRAPE-Malta. All rights reserved.
-            </p>
+            <div className="flex items-center gap-4 text-primary-foreground/50 text-xs mt-8">
+              <p>© {new Date().getFullYear()} GRAPE-Malta. All rights reserved.</p>
+              <a href="/admin" className="hover:text-accent transition-colors">Admin</a>
+            </div>
           </div>
         </div>
       </div>
