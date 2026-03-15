@@ -157,9 +157,14 @@ const Admin = () => {
             <img src={logo} alt="GRAPE-Malta" className="h-8 w-8 rounded" />
             <span className="font-heading font-bold text-foreground">Admin Panel</span>
           </div>
-          <Button variant="ghost" size="sm" onClick={() => { signOut(); navigate("/"); }}>
-            <LogOut className="w-4 h-4 mr-2" /> Sign Out
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button variant="ghost" size="sm" asChild>
+              <Link to="/">← Home</Link>
+            </Button>
+            <Button variant="ghost" size="sm" onClick={() => { signOut(); navigate("/"); }}>
+              <LogOut className="w-4 h-4 mr-2" /> Sign Out
+            </Button>
+          </div>
         </div>
       </header>
 
