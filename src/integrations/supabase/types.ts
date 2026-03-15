@@ -14,6 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
+      courses: {
+        Row: {
+          created_at: string
+          date: string
+          description: string
+          id: string
+          location: string
+          spots: string
+          time: string
+          title: string
+          type: string
+        }
+        Insert: {
+          created_at?: string
+          date: string
+          description: string
+          id?: string
+          location: string
+          spots: string
+          time: string
+          title: string
+          type: string
+        }
+        Update: {
+          created_at?: string
+          date?: string
+          description?: string
+          id?: string
+          location?: string
+          spots?: string
+          time?: string
+          title?: string
+          type?: string
+        }
+        Relationships: []
+      }
       registrations: {
         Row: {
           course_title: string
