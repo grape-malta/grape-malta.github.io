@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import logo from "@/assets/grape-logo.jpg";
+import esraLogo from "@/assets/esra-europe-logo.png";
 
 const Footer = () => {
   return (
