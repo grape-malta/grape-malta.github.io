@@ -18,12 +18,12 @@ const Footer = () => {
               Groups of Regional Anaesthesia and Pain Management Enthusiasts – Malta.
               A non-profit organisation dedicated to advancing anaesthesia education.
             </p>
-            <p className="text-primary-foreground/60 text-xs mt-3 flex items-center gap-2">
-              <span>In affiliation with</span>
-              <a href="https://esraeurope.org" target="_blank" rel="noopener noreferrer" className="inline-flex items-center hover:opacity-80 transition-opacity">
-                <img src={esraLogo} alt="ESRA Europe logo" className="h-6 w-auto" />
+            <div className="mt-3">
+              <p className="text-primary-foreground/60 text-xs">In affiliation with</p>
+              <a href="https://esraeurope.org" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity mt-1">
+                <img src={esraLogo} alt="ESRA Europe logo" className="h-10 w-auto" />
               </a>
-            </p>
+            </div>
           </div>
 
           <div>
