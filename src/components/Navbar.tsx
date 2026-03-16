@@ -1,23 +1,17 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAuth } from "@/hooks/useAuth";
 import logo from "@/assets/grape-logo.jpg";
+
+const navItems = [
+  { label: "About", href: "#about" },
+  { label: "Courses", href: "#courses" },
+  { label: "Contact", href: "#contact" },
+  { label: "Login", href: "/login" },
+];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const { user, loading } = useAuth();
-
-  const navItems = [
-    { label: "About", href: "#about" },
-    { label: "Courses", href: "#courses" },
-    { label: "Contact", href: "#contact" },
-    ...(loading
-      ? []
-      : user
-        ? [{ label: "Profile", href: "/profile" }]
-        : [{ label: "Login", href: "/login" }]),
-  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">

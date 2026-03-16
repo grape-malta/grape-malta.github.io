@@ -49,15 +49,10 @@ const Login = () => {
             Sign In
           </Button>
         </form>
-        <div className="text-center text-sm text-muted-foreground space-y-1">
-          <p>
-            <Link to="/forgot-password" className="text-accent hover:underline">Forgot your password?</Link>
-          </p>
-          <p>
-            Don't have an account?{" "}
-            <Link to="/signup" className="text-accent hover:underline">Sign up</Link>
-          </p>
-        </div>
+        <p className="text-center text-sm text-muted-foreground">
+          Don't have an account?{" "}
+          <Link to="/signup" className="text-accent hover:underline">Sign up</Link>
+        </p>
         <Link to="/" className="block text-center text-sm text-muted-foreground hover:text-foreground">
           ← Back to home
         </Link>
