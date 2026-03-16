@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import logo from "@/assets/grape-logo.jpg";
+import esraLogo from "@/assets/esra-europe-logo.png";
 
 const Footer = () => {
   return (
@@ -17,8 +18,11 @@ const Footer = () => {
               Groups of Regional Anaesthesia and Pain Management Enthusiasts – Malta.
               A non-profit organisation dedicated to advancing anaesthesia education.
             </p>
-            <p className="text-primary-foreground/60 text-xs mt-3">
-              In affiliation with <a href="https://esraeurope.org" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent transition-colors">ESRA Europe</a>
+            <p className="text-primary-foreground/60 text-xs mt-3 flex items-center gap-2">
+              <span>In affiliation with</span>
+              <a href="https://esraeurope.org" target="_blank" rel="noopener noreferrer" className="inline-flex items-center hover:opacity-80 transition-opacity">
+                <img src={esraLogo} alt="ESRA Europe logo" className="h-6 w-auto" />
+              </a>
             </p>
           </div>
 
