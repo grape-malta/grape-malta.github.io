@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="mt-3">
               <p className="text-primary-foreground/60 text-xs">In affiliation with</p>
               <a href="https://esraeurope.org" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity mt-1">
-                <img src={esraLogo} alt="ESRA Europe logo" className="h-10 w-auto" />
+                <img src={esraLogo} alt="ESRA Europe logo" className="h-20 w-auto" />
               </a>
             </div>
           </div>
